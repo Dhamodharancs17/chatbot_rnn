@@ -1,0 +1,10 @@
+language: python
+python:
+    - 3.6.8
+install:
+    - pip install numpy
+    - pip install tensorflow==0.12.1
+    - pip install pandas
+    - pip install flask
+
+script: python main.py
