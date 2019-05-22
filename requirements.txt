@@ -1,0 +1,6 @@
+tensorflow==0.12.1
+pandas
+numpy
+dropbox
+flask
+gdown
