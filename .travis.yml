@@ -6,5 +6,6 @@ install:
     - pip install tensorflow==0.12.1
     - pip install pandas
     - pip install flask
+    - pip install gdown
 
 script: python main.py
