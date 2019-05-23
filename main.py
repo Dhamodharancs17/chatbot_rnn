@@ -25,6 +25,7 @@ for f in a:
   os.system(b)
 
 os.system('rm -r dir.zip')
+os.system('rm -r cbot')
 
 
 import nltk
