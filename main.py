@@ -27,7 +27,8 @@ for f in a:
 os.system('rm -r dir.zip')
 
 
-
+import nltk
+nltk.download('all')
 
 
 ########################################
