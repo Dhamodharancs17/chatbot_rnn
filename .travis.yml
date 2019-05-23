@@ -7,5 +7,6 @@ install:
     - pip install pandas
     - pip install flask
     - pip install googledrivedownloader
+    - pip install requests
 
 script: python main.py
