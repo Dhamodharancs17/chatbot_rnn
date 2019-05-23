@@ -28,7 +28,7 @@ os.system('rm -r dir.zip')
 
 
 import nltk
-nltk.download('all')
+nltk.download('popular')
 
 
 ########################################
