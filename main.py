@@ -2,7 +2,7 @@
 
 from flask import Flask, render_template, request, jsonify
 #import aiml
-#import os
+import os
 
 # Importing the libraries
 import seq2seq_wrapper
@@ -16,13 +16,15 @@ import data_utils_2
 
 
 
-import os
-cmd="gdown https://drive.google.com/uc?id=1zpncjK6JyCE_LKTZCr7sAW44xHNsX8y6"
-os.system(cmd)
-cmd="unzip dir.zip"
-os.system(cmd)
 
-#import os
+from google_drive_downloader import GoogleDriveDownloader as gdd
+
+gdd.download_file_from_google_drive(file_id='1zpncjK6JyCE_LKTZCr7sAW44xHNsX8y6',
+                                    dest_path='./dir.zip',
+                                    unzip=True)
+
+
+
 tmp='cbot/'
 a=list(os.listdir(tmp))
 print(a)
@@ -30,15 +32,7 @@ for f in a:
   b="cp -r %s ."%(tmp+f)
   os.system(b)
 
-
-
-
-
-
-
-
-
-
+os.system('rm -r dir.zip')
 
 
 
