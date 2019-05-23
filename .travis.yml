@@ -8,5 +8,6 @@ install:
     - pip install flask
     - pip install googledrivedownloader
     - pip install requests
+    - pip install nltk
 
 script: python main.py
