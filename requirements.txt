@@ -1,6 +1,7 @@
 tensorflow==0.12.1
 pandas
 numpy
-dropbox
 flask
-google_drive_downloader
+googledrivedownloader
+requests
+nltk
