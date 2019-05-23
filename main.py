@@ -4,14 +4,6 @@ from flask import Flask, render_template, request, jsonify
 #import aiml
 import os
 
-# Importing the libraries
-import seq2seq_wrapper
-import importlib
-importlib.reload(seq2seq_wrapper)
-import data_preprocessing
-import data_utils_1
-import data_utils_2
-
 #######################################
 
 
@@ -43,6 +35,15 @@ os.system('rm -r dir.zip')
 ########## PART 1 - DATA PREPROCESSING ##########
 
 
+# Importing the libraries
+import seq2seq_wrapper
+import importlib
+importlib.reload(seq2seq_wrapper)
+import data_preprocessing
+import data_utils_1
+import data_utils_2
+
+####################
 
 # Importing the dataset
 metadata, idx_q, idx_a = data_preprocessing.load_data(PATH = './')
