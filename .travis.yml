@@ -6,6 +6,6 @@ install:
     - pip install tensorflow==0.12.1
     - pip install pandas
     - pip install flask
-    - pip install gdown
+    - pip install google_drive_downloader
 
 script: python main.py
