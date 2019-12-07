@@ -126,7 +126,7 @@ def ask():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0',port=8888)#int(os.getenv('PORT')), debug=True)
+    app.run(host='0.0.0.0',port=5001)#int(os.getenv('PORT')), debug=True)
 #host='0.0.0.0',port=8080, debug=True
 
 
